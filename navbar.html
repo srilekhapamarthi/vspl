@@ -15,6 +15,10 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+.dropdown-menu 
+{
+  top:95%;
+}
 </style>
 <body>
     <img id="comp-j5dhw09rimgimage" style="object-position: 50% 50%; width: 255px; height: 91px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_9cb257a3237241969596486c5005e618~mv2.png/v1/fill/w_255,h_91,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_9cb257a3237241969596486c5005e618~mv2.webp">
@@ -29,10 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" name="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         VSPL Company
                       </a>
-                      <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown1">
+                      <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown1" name="navbarDropdown1">
                         <a class="dropdown-item" href="#">About Us</a>
                         <a class="dropdown-item" href="#">Promoters</a>
                         <a class="dropdown-item" href="#">VSPL Customers</a>
@@ -53,38 +57,38 @@
                         </div>
                       </li>
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" name="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Berth Position
                           </a>
-                          <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown">
+                          <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown" name="navbarDropdown3">
                             <a class="dropdown-item" href="#">Current Vessels</a>
                             <a class="dropdown-item" href="#">Expected Vessels</a>
                           </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" name="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Our Policy
                             </a>
-                            <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown" name="navbarDropdown4">
                               <a class="dropdown-item" href="#">CSR Policy</a>
                               <a class="dropdown-item" href="#">Remuneration Policy</a>
                               <a class="dropdown-item" href="#">Whistle Blower Policy</a>
                             </div>
                           </li>
                           <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" name="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Careers
                               </a>
-                              <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown">
+                              <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown" name="navbarDropdown5">
                                 <a class="dropdown-item" href="#">Current Openings</a>
                                 <a class="dropdown-item" href="#">Register Your CV</a>
                               </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" name="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Contact Us
                                 </a>
-                                <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown" name="navbarDropdown6">
                                   <a class="dropdown-item" href="#">Our Office</a>
                                   <a class="dropdown-item" href="#">Contact Numbers</a>
                                 </div>
@@ -104,9 +108,29 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script>
+$( "[name='navbarDropdown1']").hover(
+function() { console.log("hovered");  $('#navbarDropdown1').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown1').dropdown('hide'); }
+);
 $( "[name='navbarDropdown2']").hover(
 function() { console.log("hovered");  $('#navbarDropdown2').dropdown('show'); },
 function() {console.log(" not hovered"); $('#navbarDropdown2').dropdown('hide'); }
+);
+$( "[name='navbarDropdown3']").hover(
+function() { console.log("hovered");  $('#navbarDropdown3').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown3').dropdown('hide'); }
+);
+$( "[name='navbarDropdown4']").hover(
+function() { console.log("hovered");  $('#navbarDropdown4').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown4').dropdown('hide'); }
+);
+$( "[name='navbarDropdown5']").hover(
+function() { console.log("hovered");  $('#navbarDropdown5').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown5').dropdown('hide'); }
+);
+$( "[name='navbarDropdown6']").hover(
+function() { console.log("hovered");  $('#navbarDropdown6').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown6').dropdown('hide'); }
 );
 </script>
 </html>
