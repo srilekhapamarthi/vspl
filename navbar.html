@@ -42,10 +42,10 @@
                       </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" name="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Terminal Details
                         </a>
-                        <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown" name="navbarDropdown2">
                           <a class="dropdown-item" href="#">Infrastructure</a>
                           <a class="dropdown-item" href="#">Services</a>
                           <a class="dropdown-item" href="#">Facilities</a>
@@ -107,7 +107,7 @@
  $('#navbarDropdown1').hover(
 
     function() {$('#navbarDropdown1').dropdown('show'); }, 
-
+    
     function() {console.log("inside not hovered function");
       $( "[aria-labelledby='navbarDropdown1']" ).hover(
           function() {
@@ -117,5 +117,12 @@
           console.log("not hovered");
           $('#navbarDropdown1').dropdown('hide'); }  );
   });
+
+  $( "[name='navbarDropdown2']").hover(
+
+function() { console.log("hovered");  $('#navbarDropdown2').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown2').dropdown('hide'); }
+
+});
 </script>
 </html>
