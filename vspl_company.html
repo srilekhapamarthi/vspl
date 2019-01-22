@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="btstyle.css">
 </head>
 <style>
+.modal-header-pop {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.modal-footer-pop{
+    border-top:0;
+    padding-top:0;
+}
+.modal-body-pop, .card-body-pop{
+    padding-bottom: 0;
+}
 .col-lg-3
 {
   text-align:center;
@@ -43,6 +54,9 @@
      justify-content: center;
      align-items: center;
      /* height: 100%; */
+ }
+ .modal-content-shadow{
+    box-shadow: 2px 2px 20px 0px #1c2428;
  }
  .horicard{
      flex-direction: row;
@@ -257,10 +271,42 @@
                                             Chairman</h5>
                                         <p class="card-text">Abhijit Rajan holds a bachelor’s degree in commerce from Mumbai University. He has over 25 years of experience in strategic planning and general management.
                                             ​
-                                            http://www.gammoninfra.com/</p><a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                            http://www.gammoninfra.com/</p><a href="#" class="pos" data-toggle="modal" data-target="#arc"> >>Read More</a>
                                        
                                  </div>
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="arc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content modal-content-shadow">
+                                    <div class="modal-header modal-header-pop">
+                                    
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body modal-body-pop">
+                                            <div class="">
+                                                    <img src="https://static.wixstatic.com/media/57e2fb_fb9d8c4331ce4c42b26d59ecc91fd984~mv2.jpg/v1/fill/w_162,h_168,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_fb9d8c4331ce4c42b26d59ecc91fd984~mv2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                                                    <div class="card-body card-body-pop">
+                                                            <h5 class="card-title">Mr. Abhijit Rajan
+                                                                    Chairman</h5>
+                                                                <p class="">Abhijit Rajan holds a bachelor’s degree in commerce from Mumbai University. He has over 25 years of experience in strategic planning and general management.
+                                                                    ​
+                                                                    </p>
+                                                                <p>website : http://www.gammoninfra.com/</p>
+                                                                
+                                                        
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="modal-footer modal-footer-pop">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="card animated zoomIn mx-auto">
@@ -274,10 +320,43 @@
                                             Director</h5>
                                         <p class="card-text">Kirit grew up and went to school in India and dropped out of college to pursue the family business, believing that knowledge should be gained through mistakes and life experience instead of in a formal classroom setting.
                                           www.premjee.com</p>
-                                          <a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                          <a href="#" class="pos" data-toggle="modal" data-target="#kcs"> >>Read More</a>
                                        </div>
                                  
                           </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="kcs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content modal-content-shadow">
+                                      <div class="modal-header modal-header-pop">
+                                      
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                      </div>
+                                      <div class="modal-body modal-body-pop">
+                                              <div class="">
+                                                      <img src="https://static.wixstatic.com/media/57e2fb_344c157e967240d0a2db72dd52d60f72~mv2.jpg/v1/fill/w_185,h_185,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_344c157e967240d0a2db72dd52d60f72~mv2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                                                      <div class="card-body card-body-pop">
+                                                            <h5 class="card-title">Mr.Kirit C Shah
+                                                                    Director</h5>
+                                                                <p class="">Kirit grew up and went to school in India and dropped out of college to pursue the family business, believing that knowledge should be gained through mistakes and life experience instead of in a formal classroom setting.
+                                                                  </p>
+                                                                  <p>website : www.premjee.com</p>
+                                                                  
+                                                          
+                                                      </div>
+                                                  </div>
+                                      </div>
+                                      <div class="modal-footer modal-footer-pop">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
+
                           </div>
                           <div class="col-lg-4">
                               <div class="card animated zoomIn mx-auto">
@@ -290,11 +369,42 @@
                                           <h5 class="card-title">Mr.Ragam Kishore
                                               CEO & Whole Time Director</h5>
                                           <p class="card-text">Post Graduate with vast experience of more than three decades in the field of Shipping and Port Management.</p>
-                                          <a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                          <a href="#" class="pos" data-toggle="modal" data-target="#rkcd"> >>Read More</a>
                                        
                                         </div>
 
                             </div>
+                             <!-- Modal -->
+                                <div class="modal fade" id="rkcd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content modal-content-shadow">
+                                            <div class="modal-header modal-header-pop">
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body modal-body-pop">
+                                                    <div class="">
+                                                            <img src="https://static.wixstatic.com/media/57e2fb_7ef807d095304486a7c655cee2c84b41~mv2_d_2144_2168_s_2.png/v1/fill/w_176,h_178,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_7ef807d095304486a7c655cee2c84b41~mv2_d_2144_2168_s_2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                                                            <div class="card-body card-body-pop">
+                                                                    <h5 class="card-title">Mr.Ragam Kishore
+                                                                            CEO & Whole Time Director</h5>
+                                                                        <p class="">Post Graduate with vast experience of more than three decades in the field of Shipping and Port Management.</p>
+                                                                        
+                                                                        <p></p>
+                                                                        
+                                                                
+                                                            </div>
+                                                        </div>
+                                            </div>
+                                            <div class="modal-footer modal-footer-pop">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
                             </div>
                       </div>
                       <div class="row">
@@ -318,17 +428,17 @@
                                                          <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
+          <div class="modal-content modal-content-shadow">
+            <div class="modal-header modal-header-pop">
               
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body modal-body-pop">
                     <div class="">
                             <img src="https://static.wixstatic.com/media/57e2fb_f2d1093fb0644ab2b651bb69590cf0d7~mv2.jpg/v1/fill/w_170,h_170,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_f2d1093fb0644ab2b651bb69590cf0d7~mv2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
-                            <div class="card-body">
+                            <div class="card-body card-body-pop">
                                     <h5 class="card-title">Mr.Kishor Kumar Mohanty
                                         Director</h5>
                                     <p class="">Kishor Kumar Mohanty holds a bachelor’s degree(Electronics & Telecommunications) from the NIT, Warangal, Andhra Pradesh and a master’s degree in Business administration(finance and marketing) from XIMB and advance management program from Harvard Business School, Boston. He has over 30 years of managerial experience in various capacities including around 15 years in the infrastructure sector including business modeling and financial engineering.
@@ -340,7 +450,7 @@
                              </div>
                           </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer modal-footer-pop">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               
             </div>
@@ -361,10 +471,44 @@
                                             <p class="card-text">Mr. Chandrahas Charandas Dayal is a chartered accountant by profession. He has over 30 years of experience in areas of internal audit, audit, taxation and finance.
                                                 ​
                                                 http://www.gammoninfra.com/</p>
-                                                <a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                                <a href="#" class="pos" data-toggle="modal" data-target="#ccd"> >>Read More</a>
                                        
                                      </div>
                             </div>
+                            
+<!-- Modal -->
+<div class="modal fade" id="ccd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal-content-shadow">
+            <div class="modal-header modal-header-pop">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body-pop">
+                    <div class="">
+                            <img src="https://static.wixstatic.com/media/57e2fb_c4884f8082d44d1bbf11ff4ef7d74dc1~mv2_d_2839_3252_s_4_2.jpg/v1/fill/w_142,h_162,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_c4884f8082d44d1bbf11ff4ef7d74dc1~mv2_d_2839_3252_s_4_2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                            <div class="card-body card-body-pop">
+                                    <h5 class="card-title">Mr.Chandrahas Charandas Dayal
+                                            Independent Director</h5>
+                                        <p class="">Mr. Chandrahas Charandas Dayal is a chartered accountant by profession. He has over 30 years of experience in areas of internal audit, audit, taxation and finance.
+                                            ​
+                                           </p>
+                                        <p>website : http://www.gammoninfra.com</p>
+                                        
+                                 
+                             </div>
+                          </div>
+            </div>
+            <div class="modal-footer modal-footer-pop">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
                             </div>
                             <div class="col-lg-4">
                                 <div class="card animated zoomIn mx-auto">
@@ -377,10 +521,41 @@
                                               <h5 class="card-title">Mr.Shoumik Bose
                                                   Director</h5>
                                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                              <a href="#" class="pos" data-toggle="modal" data-target="#sb"> >>Read More</a>
                                        
                                             </div>
                               </div>
+                              <!-- Modal -->
+<div class="modal fade" id="sb" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal-content-shadow">
+            <div class="modal-header modal-header-pop">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body-pop">
+                    <div class="">
+                            <img src="https://static.wixstatic.com/media/57e2fb_5b9435a3345d4e5c83ecbf9e219a5c1f~mv2.jpg/v1/fill/w_153,h_173,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_5b9435a3345d4e5c83ecbf9e219a5c1f~mv2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                            <div class="card-body card-body-pop">
+                                    <h5 class="card-title">Mr.Shoumik Bose
+                                            Director</h5>
+                                        <p class="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       
+                                        <p></p>
+                                        
+                                 
+                             </div>
+                          </div>
+            </div>
+            <div class="modal-footer modal-footer-pop">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
                               </div>
                         </div>
                         <div class="row">
@@ -395,10 +570,41 @@
                                             <h5 class="card-title">Ms.Homai Daruwalla
                                                 Independent Director</h5>
                                             <p class="card-text">Ms. Homai A. Daruwalla is a qualified Chartered Accountant, was at the helm of affairs of Central Bank of India as Chairperson and Managing Director overseeing the entire operations of the Bank from June 30, 2005 till December 31, 2008. Prior to taking over the reins of Central Bank of India, Ms. Daruwalla was the Executive Director, Oriental Bank of Commerce. She was a member of Central Sub-Committee on Concurrent Audit of Banks constituted by the Institute of Chartered Accountants of India, as also member of the Committee on Risk Management Practices and Risk Based Supervision formed by the Indian Banks’ Association.</p>
-                                            <a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                            <a href="#" class="pos" data-toggle="modal" data-target="#hd"> >>Read More</a>
                                        
                                           </div>
                             </div>
+                            <!-- Modal -->
+<div class="modal fade" id="hd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal-content-shadow">
+            <div class="modal-header modal-header-pop">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body-pop">
+                    <div class="">
+                            <img src="https://static.wixstatic.com/media/57e2fb_8e6a5ac5f1dc4beb9bb8eed3437f3a33~mv2_d_2599_2844_s_4_2.jpg/v1/fill/w_157,h_172,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_8e6a5ac5f1dc4beb9bb8eed3437f3a33~mv2_d_2599_2844_s_4_2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                            <div class="card-body card-body-pop">
+                                    <h5 class="card-title">Ms.Homai Daruwalla
+                                            Independent Director</h5>
+                                        <p class="">Ms. Homai A. Daruwalla is a qualified Chartered Accountant, was at the helm of affairs of Central Bank of India as Chairperson and Managing Director overseeing the entire operations of the Bank from June 30, 2005 till December 31, 2008. Prior to taking over the reins of Central Bank of India, Ms. Daruwalla was the Executive Director, Oriental Bank of Commerce. She was a member of Central Sub-Committee on Concurrent Audit of Banks constituted by the Institute of Chartered Accountants of India, as also member of the Committee on Risk Management Practices and Risk Based Supervision formed by the Indian Banks’ Association.</p>
+                                        
+                                        <p></p>
+                                        
+                                 
+                             </div>
+                          </div>
+            </div>
+            <div class="modal-footer modal-footer-pop">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="card animated zoomIn mx-auto">
@@ -411,10 +617,42 @@
                                               <p class="card-text">Mr. Sanjay Chaudhary holds a bachelor’s degree in Civil Engineering. He possesses an experience of 30 years, which includes industrial projects, major restorative repairs to dilapidated buildings, port development projects, arbitration matters and infrastructure projects.
                                                   ​
                                                   http://www.gammoninfra.com/</p>
-                                                  <a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                                  <a href="#" class="pos" data-toggle="modal" data-target="#sc"> >>Read More</a>
                                        
                                        </div>
                               </div>
+                              <!-- Modal -->
+<div class="modal fade" id="sc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal-content-shadow">
+            <div class="modal-header modal-header-pop">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body-pop">
+                    <div class="">
+                            <img src="https://www.w3schools.com/w3css/img_avatar3.png" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                            <div class="card-body card-body-pop">
+                                    <h5 class="card-title">Mr.Sanjay Abhaychandra Chaudhary
+                                            Director</h5>
+                                        <p class="">Mr. Sanjay Chaudhary holds a bachelor’s degree in Civil Engineering. He possesses an experience of 30 years, which includes industrial projects, major restorative repairs to dilapidated buildings, port development projects, arbitration matters and infrastructure projects.
+                                            ​
+                                           </p>
+                                        <p>website :  http://www.gammoninfra.com/</p>
+                                        
+                                 
+                             </div>
+                          </div>
+            </div>
+            <div class="modal-footer modal-footer-pop">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
                               </div>
                               <div class="col-lg-4">
                                   <div class="card animated zoomIn mx-auto">
@@ -427,10 +665,41 @@
                                                     Alternative Director</h5>
                                                 <p class="card-text">Before joining the Group, Shiraz worked at various leading financial services companies including HSBC Thailand where he was during the peak of the Asian financial crisis, focusing on restructuring and remedying distressed debt within the corporate bank. Focused, determined, and easygoing, Shiraz now heads the Family Office of the GP Group personally focusing on investments. He joined the Group in 2008 and has been in charge of existing and potential investments of the Shah family. Shiraz helped set up the Family Office and has become the key player who, amongst other responsibilities, acts as a bridge between the shareholder and the investee companies. A man with a good sense of humor, Shiraz calls himself a smart worker but not so much a hard worker, believing that a work-life balance is key to effective performance. He greatly enjoys golfing, swimming, and playing squash during his free time.
                                                     www.premjee.com</p>
-                                                    <a href="#" class="pos" data-toggle="modal" data-target="#d1237"> >>Read More</a>
+                                                    <a href="#" class="pos" data-toggle="modal" data-target="#mep"> >>Read More</a>
                                        
                                          </div>
                                 </div>
+                                <!-- Modal -->
+<div class="modal fade" id="mep" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal-content-shadow">
+            <div class="modal-header modal-header-pop">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body-pop">
+                    <div class="">
+                            <img src="https://static.wixstatic.com/media/57e2fb_9d0fe4523fd44c31a051cf922ce0029b~mv2.jpg/v1/fill/w_167,h_167,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_9d0fe4523fd44c31a051cf922ce0029b~mv2.webp" class="card-img-top rounded mx-auto d-block" style="width: 176px; height: 178px; object-fit: cover;" alt="...">
+                            <div class="card-body card-body-pop">
+                                    <h5 class="card-title">Mr.Shiraz E Poonevala
+                                            Alternative Director</h5>
+                                        <p class="">Before joining the Group, Shiraz worked at various leading financial services companies including HSBC Thailand where he was during the peak of the Asian financial crisis, focusing on restructuring and remedying distressed debt within the corporate bank. Focused, determined, and easygoing, Shiraz now heads the Family Office of the GP Group personally focusing on investments. He joined the Group in 2008 and has been in charge of existing and potential investments of the Shah family. Shiraz helped set up the Family Office and has become the key player who, amongst other responsibilities, acts as a bridge between the shareholder and the investee companies. A man with a good sense of humor, Shiraz calls himself a smart worker but not so much a hard worker, believing that a work-life balance is key to effective performance. He greatly enjoys golfing, swimming, and playing squash during his free time.
+                                            www.premjee.com</p>
+                                        <p>website : www.premjee.com</p>
+                                        
+                                 
+                             </div>
+                          </div>
+            </div>
+            <div class="modal-footer modal-footer-pop">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
                                 </div>
                           </div>
     
