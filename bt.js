@@ -1,4 +1,5 @@
-let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
+window.onload = function() {
+  let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
 let lastId;
@@ -29,3 +30,7 @@ window.addEventListener("scroll", event => {
     }
   });
 });
+};
+
+
+

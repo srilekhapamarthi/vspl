@@ -11,6 +11,11 @@ html {
     /* this breaks position sticky in Firefox */
     /* overflow-x: hidden; */
   }
+  .section-heading{
+    position: -webkit-static;
+    position: static;
+    top: -1px;
+  }
 
 
   @media only screen and (max-width: 500px) {
@@ -65,3 +70,4 @@ html {
     padding: 2rem;
     margin: 0 0 2rem 0;
   }
+  
