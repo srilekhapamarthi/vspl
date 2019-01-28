@@ -8,7 +8,7 @@ function viewSection(pageIdentifier,sectionIdentifier) {
     scrollToSec(sectionIdentifier);
 }
 
-function pageLoad(pageIndentify){
+function pageLoad(pageIdentify){
     // finds if requested page is already loaded, if not it loads the page.
     if(page!=pageIdentify){
         var xhttp = new XMLHttpRequest();
