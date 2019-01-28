@@ -10,6 +10,7 @@ function viewSection(pageIdentifier,sectionIdentifier) {
 
 function pageLoad(pageIdentify){
     // finds if requested page is already loaded, if not it loads the page.
+    var allPages=["vspl_company.html","terminal_details.html","berth_position.html","our_policy.html","careers.html","contact_us.html","important_links.html"];
     if(page!=pageIdentify){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -17,7 +18,7 @@ function pageLoad(pageIdentify){
             document.getElementById("demo").innerHTML = this.responseText;
           }
         };
-        xhttp.open("GET", pageIndentify, true);
+        xhttp.open("GET",allPages[pageIdentify] , true);
         xhttp.send();
     }
   
