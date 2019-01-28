@@ -1,10 +1,29 @@
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML = this.responseText;
+var page="";
+
+function viewSection(pageIdentifier,sectionIdentifier) {
+    //find whether the page is already loaded
+    pageLoad(pageIdentifier);
+    //if page is already loaded then scroll to particular section in that page
+    //if page is not loaded then do ajax request and scroll to that section
+    scrollToSec(sectionIdentifier);
+}
+
+function pageLoad(pageIndentify){
+    // finds if requested page is already loaded, if not it loads the page.
+    if(page!=pageIdentify){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", pageIndentify, true);
+        xhttp.send();
     }
-  };
-  xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford", true);
-  xhttp.send();
+  
+}
+function scrollToSec(sectionIdentify){
+    //scrolls the page to required section
+    var elmnt = document.getElementById(sectionIdentify);
+    elmnt.scrollIntoView();
 }
