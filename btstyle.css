@@ -23,6 +23,9 @@ html {
     .side-nav{
       display: none !important;
     }
+    main{
+      width:100%;
+    }
     .section-heading{
       background: black;
       border-bottom: 1px solid #989EA4;
