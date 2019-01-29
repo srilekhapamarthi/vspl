@@ -50,6 +50,7 @@ html {
   
   vertical-align: top;
   display: inline-block;
+  width: 15%;
   }
   .side-nav ul {
     list-style: none;
@@ -75,7 +76,7 @@ html {
   main {
     padding-bottom: 40rem;
     display: inline-block;
-    width: 85%;
+    width: 80%;
   }
   section {
     padding: 2rem;
