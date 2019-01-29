@@ -45,8 +45,8 @@ html {
     white-space: nowrap;
     background: #37474F;
     position: sticky;
-    min-height: 92vh;
-  top: 48px;
+    min-height: 94vh;
+  top: 40px;
   
   vertical-align: top;
   display: inline-block;
