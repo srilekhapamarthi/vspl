@@ -1,7 +1,10 @@
 html {
     scroll-behavior: smooth;
   }
-
+*
+{
+  text-align: justify;
+}
   /* .main-content {
     margin: 0;
     display: flex; */
