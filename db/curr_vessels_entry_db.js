@@ -6,7 +6,15 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      
+      var vesselName = document.getElementById('vessel-name').nodeValue;
+      var cargoType = document.getElementById('cargo-type').nodeValue;
+      var activity = document.getElementById('activity').nodeValue;
+      var account = document.getElementById('account').nodeValue;
+      var agent = document.getElementById('agent').nodeValue;
+      var targetQty = document.getElementById('tar_q').nodeValue;
+      var todayQty = document.getElementById('tod_q').nodeValue;
+      var cumul = document.getElementById('cumulative').nodeValue;
+      var bal = document.getElementById('balance').nodeValue;
     } else {
       // User is signed out.
       // ...
