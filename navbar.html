@@ -11,6 +11,12 @@
     <script src="https://use.fontawesome.com/5987b8c4e0.js"></script>
 </head>
 <style>
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
   html {
   scroll-behavior: smooth;
 }
@@ -344,7 +350,7 @@
 				</hr>
 		</div>	 -->
     </div>	
-	
+    <canvas id="canvas"></canvas>
 	<!-- ./Footer -->
                   </div>
                 </div>
@@ -394,5 +400,8 @@ function() {console.log(" not hovered"); $('#navbarDropdown6').dropdown('hide');
   }
   loadDoc();
   </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="footer-animation.js"></script>
   <script src="bt.js"></script>
 </html>
