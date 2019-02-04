@@ -5,7 +5,7 @@ html {
 {
   text-align: justify;
   font-family: Calibri;
-  font-size: 1.07rem;
+ 
 }
   /* .main-content {
     margin: 0;
@@ -20,6 +20,7 @@ html {
     position: -webkit-static;
     position: static;
     top: -1px;
+    /* font-size:1.8rem; */
    
   }
   .h1
