@@ -11,8 +11,8 @@ resizeCanvas();
 
 var wave1 = createWave(context, {
   amplitude: 50,
-  duration: 4,
-  fillStyle: "rgba(103,58,183,0.8)",
+  duration: 1,
+  fillStyle: "rgba(24,56,127,0.8)",
   frequency: 2.5,
   width: vw,
   height: vh,
