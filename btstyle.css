@@ -18,6 +18,11 @@ html {
     position: -webkit-static;
     position: static;
     top: -1px;
+   
+  }
+  .h1
+  {
+    font-size:2rem !important;
   }
 
 
@@ -34,7 +39,7 @@ html {
       border-bottom: 1px solid #989EA4;
       border-top: 1px solid #717D85;
       color: #FFF;
-      font: bold 14px18px Helvetica, Arial, sans-serif;
+      font: bold 14px Calibri;
       margin: 0;
       padding: 2px 0 0 12px;
       position: -webkit-sticky;
