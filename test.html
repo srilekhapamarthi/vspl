@@ -57,3 +57,300 @@
                                   </div>
                                 </div>
                         </div>  
+
+
+
+
+
+
+
+
+
+                        {
+    "id": "bills_payment_completed_list_all",
+    "name": "bills_payment_completed_list_all",
+    "pageSize": "0",
+    "order": "",
+    "orderBy": "",
+    "showPageSizeSelector": "true",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "useSession": "false",
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "actions": [],
+    "rowActions": [],
+    "filters": [
+        {
+            "id": "filter_1",
+            "datalist_type": "filter",
+            "name": "ESMS_Note.ns_number",
+            "filterParamName": "d-3020090-fn_ESMS_Note.ns_number",
+            "label": "NS number",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": ""
+                }
+            },
+            "hidden": ""
+        },
+        {
+            "id": "filter_0",
+            "datalist_type": "filter",
+            "name": "ESMS_Note.ns_subject",
+            "filterParamName": "d-3020090-fn_ESMS_Note.ns_subject",
+            "label": "Subject",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": ""
+                }
+            },
+            "hidden": ""
+        },
+        {
+            "id": "filter_2",
+            "datalist_type": "filter",
+            "name": "pr_number",
+            "filterParamName": "d-3020090-fn_pr_number",
+            "label": "PR number",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {
+                    "defaultValue": ""
+                }
+            },
+            "hidden": ""
+        }
+    ],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "formDefId": "payment",
+            "joins": [
+                {
+                    "tableName": "ESMS_Note",
+                    "fieldId": "ESMS_Note.id",
+                    "joinFieldId": "id"
+                }
+            ],
+            "filters": [
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_create_activity_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level1_approval_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level1_clarification_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level2_approval_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level2_clarification_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level3_approval_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level3_clarification_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level4_approval_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level4_clarification_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                },
+                {
+                    "join": "OR",
+                    "field": "ESMS_Note.note_level5_approval_by",
+                    "operator": "=",
+                    "value": "#currentUser.username#"
+                }
+            ],
+            "extraCondition": "e.customProperties.payment_running_status IN ('Completed','Rejected')",
+            "groupBy": "",
+            "functionColumns": [],
+            "customSelectionValue": ""
+        }
+    },
+    "columns": [
+        {
+            "id": "column_0",
+            "datalist_type": "column",
+            "name": "ESMS_Note.ns_number",
+            "label": "NS number",
+            "sortable": "false",
+            "hidden": "false",
+            "exclude_export": "",
+            "width": "",
+            "style": "",
+            "alignment": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "format": {
+                "className": "",
+                "properties": {}
+            }
+        },
+        {
+            "id": "column_1",
+            "datalist_type": "column",
+            "name": "ESMS_Note.ns_subject",
+            "label": "subject",
+            "sortable": "false",
+            "hidden": "false",
+            "exclude_export": "",
+            "width": "",
+            "style": "",
+            "alignment": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "format": {
+                "className": "",
+                "properties": {}
+            }
+        },
+        {
+            "id": "column_3",
+            "datalist_type": "column",
+            "name": "payment_created_by",
+            "label": "payment created by",
+            "sortable": "false",
+            "hidden": "false",
+            "exclude_export": "",
+            "width": "",
+            "style": "",
+            "alignment": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "format": {
+                "className": "",
+                "properties": {}
+            }
+        },
+        {
+            "id": "column_2",
+            "datalist_type": "column",
+            "name": "payment_approval_by",
+            "label": "payment approval by",
+            "sortable": "false",
+            "hidden": "false",
+            "exclude_export": "",
+            "width": "",
+            "style": "",
+            "alignment": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "format": {
+                "className": "",
+                "properties": {}
+            }
+        },
+        {
+            "id": "column_4",
+            "datalist_type": "column",
+            "name": "modifiedByName",
+            "label": "last activity By",
+            "sortable": "false",
+            "hidden": "false",
+            "exclude_export": "",
+            "width": "",
+            "style": "",
+            "alignment": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "format": {
+                "className": "",
+                "properties": {}
+            }
+        },
+        {
+            "id": "column_5",
+            "datalist_type": "column",
+            "name": "payment_running_status",
+            "label": "payment status",
+            "sortable": "false",
+            "hidden": "false",
+            "exclude_export": "",
+            "width": "",
+            "style": "",
+            "alignment": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "format": {
+                "className": "",
+                "properties": {}
+            }
+        },
+        {
+            "id": "column_6",
+            "datalist_type": "column",
+            "name": "payment_yes_no",
+            "label": "payment yes/no",
+            "sortable": "false",
+            "hidden": "false",
+            "exclude_export": "",
+            "width": "",
+            "style": "",
+            "alignment": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "format": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    ]
+}
