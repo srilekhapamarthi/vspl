@@ -25,6 +25,7 @@ window.addEventListener("scroll", event => {
       section.offsetTop + section.offsetHeight +130> fromTop
     ) {
       link.classList.add("current");
+      console.log("event listener window")
     } else {
       link.classList.remove("current");
     }
