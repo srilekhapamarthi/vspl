@@ -27,7 +27,12 @@
     } -->
 
 
-
+    <script>
+      function resizeIframe(obj) {
+        console.log("resized");
+      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+      </script>
 
 <style>
 .modal-header-pop {
@@ -836,11 +841,12 @@
                     <section class="section-heading" id="section-6">
                         <p></p>
                       <h2>Volumes handled</h2>
-                      <iframe src="volumes_handled.html" frameborder="0" width="100%" height="750px" scrolling=no></iframe>
+                      <iframe id="bg-col" src="volumes_handled.html" height="750px" frameborder="0" width="90%" scrolling=no></iframe>
                     </section> 
                    
                   </main>
     </div>
+   
 <!--     
  <script src="bt.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
