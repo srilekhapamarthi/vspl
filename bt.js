@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onscroll = function() {
   let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
