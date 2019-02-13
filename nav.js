@@ -10,7 +10,7 @@ function viewSection(pageIdentifier,sectionIdentifier) {
 
 function pageLoad(pageIdentify,sectionIdentifier){
     // finds if requested page is already loaded, if not it loads the page.
-    var allPages=["vspl_company.html","terminal_details.html","berth_position.html","our_policy.html","careers.html","contact_us.html","tenders.html"];
+    var allPages=["vspl_company.html","terminal_details.html","berth_position.html","our_policy.html","careers.html","contact_us.html","tenders.html","homepage.html"];
     if(page!=pageIdentify){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
