@@ -95,7 +95,7 @@
   color: rgb(255, 255, 255);
     background-color: #f1b114;
 }
-.carousel
+.video-bg
 {
   position:sticky;
   top:40px; 
@@ -281,7 +281,7 @@
                   </ul>
                 </div>
               </nav>
-              <div id="carouselExampleSlidesOnly" class="carousel slide make-bg" >
+              <div class="video-bg make-bg" >
                 <!-- <div class="carousel-inner">
                   <div class="carousel-item active">
                       <img src="video/image.png"  height=600px; class="d-block w-100" alt="...">
@@ -416,7 +416,7 @@ function() {console.log(" not hovered"); $('#navbarDropdown7').dropdown('hide');
         document.getElementById("demo").innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "terminal_details.html", true);
+    xhttp.open("GET", "homepage.html", true);
     xhttp.send();
   }
   loadDoc();
