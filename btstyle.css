@@ -8,6 +8,12 @@
 {
   color:#3931af;
 }
+.nav-logo-show{
+  display:block;
+}
+.nav-logo-hide{
+  display: none;
+}
 .sub-head, .subheading
 {
   font-size: 1.1rem;

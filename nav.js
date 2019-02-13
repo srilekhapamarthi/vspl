@@ -31,3 +31,18 @@ function scrollToSec(sectionIdentify){
     var elmnt = document.getElementById(sectionIdentify);
         elmnt.scrollIntoView();
 }
+
+
+//show vspl icon on navbar on scroll
+myID = document.getElementById("logo_nav");
+
+function myScrollFunc() {
+  var y = window.scrollY;
+  if (y >= 70 ) {
+      console.log("scrolling.............")
+    myID.classList.add(" nav-logo-show");
+  } else {
+    myID.classList.add("nav-logo-hide");
+  }
+};
+window.onscroll = myScrollFunc();
