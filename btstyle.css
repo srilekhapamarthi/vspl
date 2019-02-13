@@ -1,3 +1,23 @@
+.sec-head, .infra_heading
+{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color:#3931af;
+}
+.color-blue
+{
+  color:#3931af;
+}
+.sub-head, .subheading
+{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color:#ffa500;
+}
+.color-yellow
+{
+  color:#ffa500;
+}
 .flex-center
 {
   display:flex;
@@ -31,8 +51,18 @@ html {
     position: -webkit-static;
     position: static;
     top: -1px;
+    font-family: 'Crete Round', serif;
+    font-size: 1.6rem;
+    text-shadow: -3px 1px 1px #c6c6c6;
     /* font-size:1.8rem; */
    
+  }
+  .section-heading::after{
+    content: '';
+    /* border:1px solid #37474F; */
+    height: 2px;
+    background-image: linear-gradient(to right,#ffa500,#edeceb);
+    display:block;
   }
   .h1
   {
