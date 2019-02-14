@@ -1,4 +1,24 @@
+
 window.onscroll = function() {
+  //show vspl icon on navbar on scroll
+myID = document.getElementById("logo_nav");
+
+  var y = window.scrollY;
+  if (y>=93) {
+    console.log(y);
+      console.log("scrolling.............")
+    myID.classList.add("nav-logo-show");
+    myID.classList.add("zoomIn");
+    myID.classList.remove("nav-logo-hide");
+    myID.classList.remove("zoomOut");
+  } else {
+    console.log("not scrolling.............")
+    myID.classList.add("zoomOut");
+    // myID.classList.add("nav-logo-hide");
+    myID.classList.remove("nav-logo-show");
+    myID.classList.remove("zoomIn");
+    
+  }
   let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
