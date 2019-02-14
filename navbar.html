@@ -40,6 +40,7 @@
   html {
   scroll-behavior: smooth;
 }
+iframe{width:100%}
 .nav-head{
   /* border-top: 4px solid #ffcc00; */
   background-color:white;
@@ -193,6 +194,7 @@
 }
 }
 </style>
+<script src="iframeResizer.min.js"></script>
 <body >
    <div class="nav-head">
       
@@ -220,7 +222,7 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <span>
-                  <img src="video/logo.jpg" alt="" style="width:40px;" class="animated zoomIn rounded nav-logo-hide" id="logo_nav" >
+                  <img src="video/logo.jpg" onclick="viewSection('7','home-page')" alt="" style="width:40px;cursor: pointer;" class="animated zoomIn rounded nav-logo-hide" id="logo_nav" >
                 </span>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
@@ -434,6 +436,7 @@ function() { console.log("hovered");  $('#navbarDropdown7').dropdown('show'); },
 function() {console.log(" not hovered"); $('#navbarDropdown7').dropdown('hide'); }
 );
 </script>
+
 <script>
   function loadDoc() {
     var xhttp = new XMLHttpRequest();

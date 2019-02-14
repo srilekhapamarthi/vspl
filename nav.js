@@ -17,6 +17,7 @@ function pageLoad(pageIdentify,sectionIdentifier){
           if (this.readyState == 4 && this.status == 200) {
             document.getElementById("demo").innerHTML = this.responseText;
              scrollToSec(sectionIdentifier);
+             iFrameResize();
           }
         };
         xhttp.open("GET",allPages[pageIdentify] , true);
