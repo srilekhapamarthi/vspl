@@ -14,7 +14,7 @@ myID = document.getElementById("logo_nav");
   } else {
     console.log("not scrolling.............")
     myID.classList.add("zoomOut");
-    // myID.classList.add("nav-logo-hide");
+    myID.classList.add("nav-logo-hide");
     myID.classList.remove("nav-logo-show");
     myID.classList.remove("zoomIn");
     
