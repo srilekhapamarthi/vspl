@@ -4,7 +4,7 @@ window.onscroll = function() {
 myID = document.getElementById("logo_nav");
 
   var y = window.scrollY;
-  if (y>=93) {
+  if (y>=70) {
     // console.log(y);
       // console.log("scrolling.............")
     myID.classList.add("nav-logo-show");
