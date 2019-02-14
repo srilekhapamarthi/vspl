@@ -5,14 +5,14 @@ myID = document.getElementById("logo_nav");
 
   var y = window.scrollY;
   if (y>=93) {
-    console.log(y);
-      console.log("scrolling.............")
+    // console.log(y);
+      // console.log("scrolling.............")
     myID.classList.add("nav-logo-show");
     myID.classList.add("zoomIn");
     myID.classList.remove("nav-logo-hide");
     myID.classList.remove("zoomOut");
   } else {
-    console.log("not scrolling.............")
+    // console.log("not scrolling.............")
     myID.classList.add("zoomOut");
     myID.classList.add("nav-logo-hide");
     myID.classList.remove("nav-logo-show");
