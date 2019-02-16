@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="video/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -9,9 +10,25 @@
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="btstyle.css">
     <script src="https://use.fontawesome.com/5987b8c4e0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
 </head>
 <style>
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track-piece{
+  background: #eaeaea;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6c757d; 
+  border-radius: 7px;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #343a40; 
+}
 #canvas {
   position: relative;
   bottom: -1;
@@ -94,7 +111,7 @@
   color: rgb(255, 255, 255);
     background-color: #f1b114;
 }
-.carousel
+.video-bg
 {
   position:sticky;
   top:40px; 
@@ -176,7 +193,7 @@
 }
 }
 </style>
-<body>
+<body >
    <div class="nav-head">
       
      <div style="display: flex;
@@ -185,10 +202,11 @@
       font-family: book antiqua;
       font-weight: 1000;
       font-size: 50px;
-      color: #183884;">
+      cursor: pointer;
+      color: #183884;" class="homepage-logo" onclick="viewSection('7','home-page')">
       <img class="imageicon" style="" alt="" data-type="image" src="video/vspl_logo_wheel.png">
       <!-- <img class="imageicon" style="width:90px;" alt="" data-type="image" src="video/logo.jpg"> -->
-<img class="" style="width:82px;position: absolute; left:-2px;" alt="" data-type="image"  src="video/logo-border.png">
+      <img class="" style="width:82px;position: absolute; left:-2px;" alt="" data-type="image"  src="video/logo-border.png">
       <img style=" width:330px; height:60px;padding-top:12px;" alt="" data-type="image" src="video/test.jpg">
     </div>
      
@@ -201,7 +219,9 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-              
+                <span>
+                  <img src="video/logo.jpg" alt="" style="width:40px;" class="rounded nav-logo-show" id="logo_nav" >
+                </span>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
@@ -213,7 +233,6 @@
                         <a class="dropdown-item" href="#" onclick="viewSection('0','section-2')">Promoters</a>
                         <a class="dropdown-item" href="#" onclick="viewSection('0','section-3')">VSPL Customers</a>
                         <a class="dropdown-item" href="#" onclick="viewSection('0','section-4')">Board Of Directors</a>
-                        <a class="dropdown-item" href="#" onclick="viewSection('0','section-7')">Management Team</a>
                         <!-- <a class="dropdown-item" href="#" onclick="viewSection('0','section-5')">Terminal Layout</a> -->
                         <a class="dropdown-item" href="#" onclick="viewSection('0','section-6')">Volumes handled</a>
                       </div>
@@ -249,6 +268,17 @@
                             </div>
                           </li>
                           <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" onclick="viewSection('6','section-1')" id="navbarDropdown7" name="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Tenders
+                            </a>
+                            <div class="dropdown-menu animated  slideInUp"  aria-labelledby="navbarDropdown" name="navbarDropdown7">
+                              <a class=" dropdown-item" href="#" onclick="viewSection('6','section-1')">Electrical Department</a>
+                              <a class="  dropdown-item" href="#" onclick="viewSection('6','section-2')">Mechanical Department</a>
+                              <a class=" dropdown-item" href="#" onclick="viewSection('6','section-3')">Civil Department</a>
+                              <a class="  dropdown-item" href="#" onclick="viewSection('6','section-4')">Material Tendors</a>
+                             </div>
+                           </li>
+                          <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" onclick="viewSection('4','section-1')" id="navbarDropdown5" name="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Careers
                               </a>
@@ -258,18 +288,19 @@
                               </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <!-- <a class="nav-link dropdown-toggle" href="#" onclick="viewSection('5','section-1')" id="navbarDropdown6" name="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" onclick="viewSection('5','section-1')" id="navbarDropdown6" name="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Contact Us
-                                </a> -->
+                                </a>
+                                <div class="dropdown-menu animated  slideInUp" style="left:-55px;" aria-labelledby="navbarDropdown6" name="navbarDropdown6">
+                                  <a class=" dropdown-item" href="#" onclick="viewSection('5','section-1')">Our Office</a>
+                                  <a class="  dropdown-item" href="#" onclick="viewSection('5','section-2')">Management Team</a>
+                                 </div>
+                               </li>
                                
-                                  <a class=" nav-link dropdown-item" href="#" onclick="viewSection('5','section-1')">Our Office</a>
-                                  
-                                
-                              </li>
                   </ul>
                 </div>
               </nav>
-              <div id="carouselExampleSlidesOnly" class="carousel slide make-bg" >
+              <div class="video-bg make-bg" >
                 <!-- <div class="carousel-inner">
                   <div class="carousel-item active">
                       <img src="video/image.png"  height=600px; class="d-block w-100" alt="...">
@@ -304,39 +335,47 @@
           <li><a href="javascript:void();" onclick="viewSection('1','section-1')"><i class="fa fa-angle-double-right"></i>Terminal Details</a></li>
           <li><a href="javascript:void();" onclick="viewSection('2','section-1')"><i class="fa fa-angle-double-right"></i>Berth Position</a></li>
           <li><a href="javascript:void();" onclick="viewSection('3','section-1')"><i class="fa fa-angle-double-right"></i>Our Policy</a></li>
+          <li><a href="javascript:void();" onclick="viewSection('6','section-1')"><i class="fa fa-angle-double-right"></i>Tenders</a></li>
           <li><a href="javascript:void();" onclick="viewSection('4','section-1')"><i class="fa fa-angle-double-right"></i>Careers</a></li>
-          <li><a href="javascript:void();" onclick="viewSection('5','section-1')"><i class="fa fa-angle-double-right"></i>Locate Us</a></li>
-         </ul>
+          <li><a href="javascript:void();" onclick="viewSection('5','section-1')"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+        </ul>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-          <h5  style="font-size: 1.6rem !important;font-weight:600 !important;">Office Address</h5>
-          <ul class="list-unstyled quick-links">
-              <li style="color:#343a40;font-weight:600;font-size:1.2rem;">Administrator Block, <br>S4 Gallery,<br> Port Area,Near GFCL,<br> Visakhapatnam<br>Andhra Pradesh-530035<br>India.</li>
-              
-          </ul>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-          <h5  style="font-size: 1.8rem !important;font-weight:600 !important;">Contact Us</h5>
-          <ul class="list-unstyled quick-links">
-              <li style="color:#343a40;font-weight:600;font-size:1.2rem;"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;91 891 2556400,<br> 
-                <i class="fa fa-fax" aria-hidden="true"></i>&nbsp;91 891 2556401<br>
-                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;info@vizagseaport.com<br> </li>
-              <li style="color:#343a40;font-weight:600;font-size:1.2rem;">
-                <a href="http://vizagseaport.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp; <u style="color:blue;">www.vizagseaport.com</u></a>
-              </li>
-              
-              <!-- <li><a href="javascript:void();"><b>GST: 37AABCV2484K1ZY  CIN: U45203AB2001PTC038955</b></a></li> -->
-              
-                  
-               
+      <div class="col-xs-12 col-sm-8 col-md-8">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <h5  style="font-size: 1.6rem !important;font-weight:600 !important;">Office Address</h5>
+            <ul class="list-unstyled quick-links">
+                <li style="color:#343a40;font-weight:600;font-size:1.2rem;">Administrator Block, <br>S4 Gallery,<br> Port Area,Near GFCL,<br> Visakhapatnam<br>Andhra Pradesh-530035<br>India.</li>
+                
             </ul>
-            <div class="list-inline-item"><a style="color: #4267b2" href="javascript:void();"><i class="fa fa-facebook-official fa-2x"></i></a></div>
-                  <div class="list-inline-item"><a style="color: #BD081C" href="http://mail.vizagseaport.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></div>
-              
-              
-              
-
         </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <h5  style="font-size: 1.8rem !important;font-weight:600 !important;">Contact Us</h5>
+            <ul class="list-unstyled quick-links">
+                <li style="color:#343a40;font-weight:600;font-size:1.2rem;"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;91 891 2556400,<br> 
+                  <i class="fa fa-fax" aria-hidden="true"></i>&nbsp;91 891 2556401<br>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;info@vizagseaport.com<br> </li>
+                <li style="color:#343a40;font-weight:600;font-size:1.2rem;">
+                  <a href="http://vizagseaport.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp; <u style="color:blue;">www.vizagseaport.com</u></a>
+                </li>
+                
+                <!-- <li><a href="javascript:void();"><b>GST: 37AABCV2484K1ZY  CIN: U45203AB2001PTC038955</b></a></li> -->
+                    
+                 
+              </ul>
+              <div class="list-inline-item"><a style="color: #4267b2" href="javascript:void();"><i class="fa fa-facebook-official fa-2x"></i></a></div>
+                    <div class="list-inline-item"><a style="color: #BD081C" href="http://mail.vizagseaport.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></div>
+          </div>
+        </div>
+        <div class="row text-center text-xs-center text-sm-left text-md-left" style="display:flex;align-items:flex-end;">
+          <p style="color:#444; font-size:18px;font-weight:800; ">2019 © All Rights Reserved by VIZAG SEAPORT</p>
+                
+        </div>
+      </div>
+      
+    </div>
+    <div>
+      <!-- <p style="color:white; font-size:10px; text-align:center;">2019 © All Rights Reserved by VSPL</p> -->
     </div>
     <!-- <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
@@ -389,6 +428,11 @@ $( "[name='navbarDropdown6']").hover(
 function() { console.log("hovered");  $('#navbarDropdown6').dropdown('show'); },
 function() {console.log(" not hovered"); $('#navbarDropdown6').dropdown('hide'); }
 );
+
+$( "[name='navbarDropdown7']").hover(
+function() { console.log("hovered");  $('#navbarDropdown7').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown7').dropdown('hide'); }
+);
 </script>
 <script>
   function loadDoc() {
@@ -398,7 +442,7 @@ function() {console.log(" not hovered"); $('#navbarDropdown6').dropdown('hide');
         document.getElementById("demo").innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "terminal_details.html", true);
+    xhttp.open("GET", "homepage.html", true);
     xhttp.send();
   }
   loadDoc();

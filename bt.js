@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onscroll = function() {
   let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
@@ -25,6 +25,7 @@ window.addEventListener("scroll", event => {
       section.offsetTop + section.offsetHeight +130> fromTop
     ) {
       link.classList.add("current");
+      console.log("event listener window")
     } else {
       link.classList.remove("current");
     }
