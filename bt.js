@@ -1,4 +1,27 @@
+
 window.onscroll = function() {
+  //show vspl icon on navbar on scroll
+myID = document.getElementById("logo_nav");
+// zoutID=document.getElementById("nav-head-up");
+  var y = window.scrollY;
+
+  if (y>=40) {
+    // console.log(y);
+      // console.log("scrolling.............")
+      // logo on scroll popup in navbar
+    myID.classList.add("nav-logo-show");
+    myID.classList.add("zoomIn");
+    myID.classList.remove("nav-logo-hide");
+    myID.classList.remove("zoomOut");
+    
+  } else {
+    // console.log("not scrolling.............")
+     // logo on scroll vanish in navbar
+    myID.classList.add("zoomOut");
+    myID.classList.add("nav-logo-hide");
+    myID.classList.remove("nav-logo-show");
+    myID.classList.remove("zoomIn");  
+  }
   let mainNavLinks = document.querySelectorAll(".side-nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
@@ -22,7 +45,7 @@ window.addEventListener("scroll", event => {
 
     if (
       section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight +130> fromTop
+      section.offsetTop + section.offsetHeight +110> fromTop
     ) {
       link.classList.add("current");
       console.log("event listener window")

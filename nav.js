@@ -17,6 +17,7 @@ function pageLoad(pageIdentify,sectionIdentifier){
           if (this.readyState == 4 && this.status == 200) {
             document.getElementById("demo").innerHTML = this.responseText;
              scrollToSec(sectionIdentifier);
+             iFrameResize();
           }
         };
         xhttp.open("GET",allPages[pageIdentify] , true);
@@ -33,16 +34,4 @@ function scrollToSec(sectionIdentify){
 }
 
 
-//show vspl icon on navbar on scroll
-myID = document.getElementById("logo_nav");
 
-function myScrollFunc() {
-  var y = window.scrollY;
-  if (y >= 70 ) {
-      console.log("scrolling.............")
-    myID.classList.add(" nav-logo-show");
-  } else {
-    myID.classList.add("nav-logo-hide");
-  }
-};
-window.onscroll = myScrollFunc();

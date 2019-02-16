@@ -87,14 +87,27 @@
     justify-content:center;
     align-items:flex-start;
     }
-    /* .infra_heading{
+     /* .infra_heading{
         font-size: 1.3rem;
         font-weight: 500;
-        /* border-bottom: 1px solid orange; */
+         border-bottom: 1px solid orange; 
         color: #3931af;
-    } */
+    }  */
     .left-data {
-        font-weight: 500;
+        font-weight: 600;
+    }
+    .infra-shore{
+      height:450px !important;
+    }
+
+    @media only screen and (max-width: 500px) {
+      /* For Mobile: */
+      .infra-shore{
+      height:unset !important;
+    }
+    .shore-crane-left{
+      display: none;
+    }
     }
 
     </style>
@@ -118,34 +131,34 @@
                            <div class="row">
                                <div class="col-md-6 flex-center" style="align-items:unset;">
                                    <div class="row">
-                                       <div class="col-md-6 left-data">
+                                       <div class="col-6  left-data">
                                         No. of Berths
                                        </div>
-                                       <div class="col-md-6 right-data">
+                                       <div class="col-6  right-data">
                                            2 (EQ.8 and EQ.9)
                                        </div>
                                    </div>
                                    <div class="row">
-                                          <div class="col-md-6 left-data">
+                                          <div class="col-6  left-data">
                                            Water spread
                                           </div>
-                                          <div class="col-md-6 right-data">
+                                          <div class="col-6  right-data">
                                            100 Hectares
                                           </div>
                                    </div>
                                    <div class="row">
-                                          <div class="col-md-6 left-data">
+                                          <div class="col-6 left-data">
                                           Vessel Compatibility
                                           </div>
-                                          <div class="col-md-6 right-data">
+                                          <div class="col-6 right-data">
                                            Up to Panamax
                                           </div>
                                    </div>
                                    <div class="row">
-                                          <div class="col-md-6 left-data">
+                                          <div class="col-6  left-data">
                                            Length of Berths
                                           </div>
-                                          <div class="col-md-6 right-data">
+                                          <div class="col-6  right-data">
                                           255 mtrs each
                                           </div>
                                    </div>
@@ -197,34 +210,70 @@
                   <div class="how-section1" style="margin-top:2%">
                           <div class="infra_heading">Cargo Handling Facilities</div>
                           <hr>
-                           <div class="row">
-                               <div class="col-md-6 flex-center" style="align-items:unset;">
-                                   <div class="row">
-                                       <div class="col-md-12 ">
-                                          <div class="subheading" >Shore Cranes</div>
-                                          <hr>
-                                          <p>VSPL has 5 shore cranes</p>
-                                          <p>
-                                              LIEBHERR Tyre Mounted Harbour Mobile Cranes with dicharge / 
-                                              loading capacity of 750 TPH. Hook capacity 104 Tons with 35 CBM Grabs.
-                                          </p>
-                                       </div>
+                          <div class="row">
+                            <div class="col-12">
+                                <div class="subheading" style="font-weight:600;" >Shore Cranes</div>
+                            
+                                <hr>
+                                <p>VSPL has 5 shore cranes</p>
+                                <p>
+                                    LIEBHERR Tyre Mounted Harbour Mobile Cranes with dicharge / 
+                                    loading capacity of 750 TPH. Hook capacity 104 Tons with 35 CBM Grabs.
+                                </p>
+                            </div>
+                            
+                          </div>
+                           <div class="row" class="infra-shore" >
+                                  <img src="video/123.jpg" style="" class=" img-fluid" alt=""/>
+                                  <div class="col-md-3 flex-center" style="">
+                                  <img src="video/123.png" style="height: 60%;" class=" img-fluid" alt=""/>
+                              </div>
+                               <div class="col-md-6 flex-center" style="align-items: center;justify-content:flex-start;">
+                                   <div class="row flex-center" style="align-items: center;">
+                                      <img src="video/Liebherr-logo.jpg" style="width:60%;" class=" img-fluid" alt=""/>
                                    </div>
-                                   <div class="row">
-                                          <div class="col-md-12 ">
-                                              <div class="subheading">BHMHS</div>
-                                              <hr>
-                                              <p>
-                                                      (Bulk Material Handling System) comprising of Mobile Hopper, 
-                                                      Stacker Reclaimers (Slewable and Luffable), Belt Conveyors & Wagon Loaders. Stacking Capacity 1050 TPH.
-                                              </p>
-                                          </div>
+                                   <div class="row  flex-center">
+                                      <img src="video/1.jpg" class=" img-fluid" alt=""/>
+                                   </div>
+                                   <div class="row  flex-center">
+                                      <img src="video/2.jpg" class=" img-fluid" alt=""/>
+                                   </div>
+                                   <div class="row  flex-center">
+                                      <img src="video/3.jpg" class=" img-fluid" alt=""/>
+                                   </div>
+                                   <div class="row flex-center">
+                                      <img src="video/4.jpg" class=" img-fluid" alt=""/>
                                    </div>
                                </div>
-                               <div class="col-md-6 how-img flex-center">
-                                      <img src="video/vessel-ins.jpg" class=" img-fluid" alt=""/>
+                               <div class="col-md-3  flex-center shore-crane-left" style="">
+                                      <img src="video/123-1.png" style="height: 60%;" class=" img-fluid" alt=""/>
                               </div>
                            </div>
+                           <div class="row">
+                              <div class="col-12">
+                                  <div class="subheading" style="font-weight:600;" >BHMS</div>
+                              
+                                  <hr>
+                                  
+                                  <p>
+                                      (Bulk Material Handling System) comprising of Mobile Hoppers, Stacker Reclaimers (Slewable and Luffable), 
+                                      Belt Conveyors & Wagon Loaders. Stacking capacity 1600 TPH and Wagon Loading capacity 1050 TPH
+                                  </p>
+
+                              </div>
+                              
+                          </div>
+                          <div class="row flex-center" style="flex-direction:row; align-items:center !important;">
+                            <div class="col-4">
+                               <img src="video/stackreclaimer.jpg" class="img-fluid how-img" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="video/dedusting-hopper-3d.png" class=" img-fluid how-img" alt="">
+                             </div>
+                             <div class="col-4">
+                                <img src="video/idx3D.png" class="img-fluid how-img" alt="">
+                             </div>
+                          </div>
                   </div>
                     </section>
                         <section id="section-2"><p></p>
@@ -1773,8 +1822,11 @@
                           
                         </div> -->
                         
-                        <iframe src="http://docs.google.com/gview?url=https://mbsyaswanth.github.io/vspl/docs/VSPL-Revised%20Scale%20of%20Rates-WEF-29.03.18.pdf&embedded=true" style="width:100%; height:100vh;" frameborder="0"></iframe>
-
+                        <!-- <iframe src="http://docs.google.com/gview?url=https://mbsyaswanth.github.io/vspl/docs/VSPL-Revised%20Scale%20of%20Rates-WEF-29.03.18.pdf&embedded=true" style="width:100%; height:100vh;" frameborder="0"></iframe>
+                        <iframe src = "/ViewerJS/#../docs/VSPL-Revised Scale of Rates-WEF-29.03.18.pdf" width='100%' height='600px' frameborder="0" allowfullscreen webkitallowfullscreen></iframe>
+                        <object data="docs/VSPL-Revised Scale of Rates-WEF-29.03.18.pdf" type="application/pdf" style="width:100%; height:600px;" allowfullscreen></object>
+                        <embed src="docs/VSPL-Revised Scale of Rates-WEF-29.03.18.pdf" type="application/pdf" style="width:100%; height:600px;" allowfullscreen> -->
+                          <iframe src="docs/VSPL-operating procedures.pdf" width='100%' height='600px' frameborder="0"  allowfullscreen></iframe>
                         <!-- <ul>
                           <li>Stevedoring operations shall be performed only by VSPL.</li>
                           <li>Storage area on lease available to all cargo interests subject to prior bookings.</li>

@@ -1,5 +1,6 @@
 .sec-head, .infra_heading
 {
+  margin-top: 25px;
   font-size: 1.1rem;
   font-weight: 600;
   color:#3931af;
@@ -83,7 +84,7 @@ html {
       display: none !important;
     }
     main{
-      width:100%;
+      width:100% !important;
       
     }
     /* .section-heading{
