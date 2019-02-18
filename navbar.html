@@ -183,6 +183,26 @@ iframe{width:100%}
 }
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
+}.back-to-top {
+    position: fixed;
+    display: none;
+    background: #f1b114e3;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 7px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+.back-to-top i {
+    padding-top: 7px;
+    /* color: #18387f; */
+    font-size:23px;
 }
 
 @media (max-width:767px){
@@ -330,6 +350,9 @@ iframe{width:100%}
                 <video class="visible-desktop" id="hero-vid" poster="video/image.png" width="100%" autoplay="" loop="" muted="" >
                   <source type="video/mp4" src="video/vizag_seaport.mp4">
               </video>
+              </div>
+              <div class="up_arrow" id="up-arrow">
+                <a href="#nav-head-up" class="back-to-top nav-logo-hide" style="display: inline;cursor: pointer;"><i class="fa fa-chevron-up"></i></a>
               </div>
               <div class="content" >
                   <div id="demo">
