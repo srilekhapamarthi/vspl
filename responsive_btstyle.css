@@ -1,0 +1,32 @@
+@media only screen and (max-width: 500px) {
+.content {
+    background-color:#ffffff;
+    }
+#comp-j5dofp1simgimage4, #comp-j5dql230imgimage3, #envi-img
+{
+display:none;
+}
+#vspl
+{
+    width:270px !important;
+}
+.carousel-width{
+    height:50vh !important;
+    text-align: center;
+  }
+  .carousel-inner{
+    height:50vh !important;
+  }
+  #vol_hand
+  {
+    width:100%;
+  }
+  #green-cont
+  {
+      height:200px;
+  }
+  #op_pro
+  {
+      height:unset !important;
+  }
+}

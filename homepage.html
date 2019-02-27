@@ -5,60 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="bootstrap.min.css" >
-    <link rel="stylesheet" href="animate.css">
-    <script src="https://use.fontawesome.com/5987b8c4e0.js"></script> -->
 </head>
 <style>
-  /* 
-  html,body{
-      height: 100%;
-      width: 100%;
-  } 
-  */
-  /* div .child{
-      height: 300px;
-  } */
-  .carousel-width{
-    height:80vh !important;
-    text-align: center;
-  }
-  .carousel-inner{
-    height:80vh !important;
-  }
-  .padding-around{
-    padding: 20px 10px 20px 10px;
-  }
-  .box-shadow-padding{
-    border-radius: 5px;
-    padding: 15px 10px 15px 10px;
-    box-shadow: 3px 3px 14px 1px grey;
-    background-color: white;
-  }
-  .content
+.content
   {
     background-color:unset;
   }
-</style>
+  .scroll-container{
+    animation:hori-scroll 40s linear infinite;
+  }
+  .scroll-container:hover 
+{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+     animation-play-state: paused;
+}
+  @keyframes hori-scroll {
+    100% { transform: translate(0,-85%);}
+    0% { transform: translate(0,0);}
+  }
+  </style>
 <body>
     <div class="container" id="home-page" style="background-color:white; border-radius:10px">
       <div class="padding-around"></div>
             <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 child padding-around" style="height: 400px;">
+                    <div class="col-lg-5 col-md-5 col-sm-12 child padding-around" style="height: 380px;">
                      <div class="box-shadow-padding">
                         <h4 class="section-heading">VSPL Motto</h4>
                         <p>Under Construction</p>
                      </div>
                       
                     </div>
-                    <div class="col-lg-7 col-md-7 col-sm-12 child padding-around" style=" height: 400px;">
-                      <div class="box-shadow-padding">
-                          <h4 class="section-heading">News</h4>  
-                          <p>Under Construction</p>
+                    <div class="col-lg-7 col-md-7 col-sm-12 child padding-around" style=" height: 380px;">
+                      <div class="box-shadow-padding" style=" height: 340px;overflow-y: hidden;">
+                          <h4 class="section-heading">News</h4>
+                          <div class="hori-scroll-contain" style="overflow-y: hidden;">
+                          <div class="scroll-container">
+                            <h6 style="text-decoration:underline;font-weight:600;">Thursday, May 24, 2018</h6>
+                            <p>
+                              Vizag Seaport set a record by discharging <b>39,985 MT</b> 
+                              of <b>Coking coal</b> in <b>24 Consecutive Hours</b> at
+our Terminal from Panamax Vessel <b>MV. JIA DA</b>. This is the highest discharge rate achieved at our
+Terminal During the month of May 18. The Cargo importers are <b>M/s SAIL</b> .
+                            </p>
+                            <h6 style="text-decoration:underline;font-weight:600;">Sunday, March 27, 2016</h6>
+                            <p>
+                              Vizag Seaport set a record by discharging <b>41,682 MT</b> of <b>Steam coal</b>
+                               in <b>24 Consecutive Hours</b> at
+our Terminal from Panamax Vessel <b>MV. MBA FUTURE</b>. This is the highest discharge rate achieved
+at our Terminal During the month of March 16. The Cargo importers are <b>M/s Swiss Singapore</b>M/s Swiss Singapore.
+                            </p>
+                            <h6 style="text-decoration:underline;font-weight:600;">Friday, November 20, 2015</h6>
+                            <p>
+                              Vizag Seaport set a record by discharging <b>32,811 MT</b> of <b>Pet coke</b> in 
+                              <b>24 Consecutive Hours</b> at our
+Terminal from Panamax Vessel <b>MV. Key Action</b>MV. Key Action. This is the highest discharge rate achieved at our
+Terminal till date. The Cargo importers are <b>M/s Acc &amp; Acl Ltd</b>.
+                            </p>
+                            
+                            <h6 style="text-decoration:underline;font-weight:600;">Wednesday, November 18, 2015</h6>
+                            <p>
+                              Vizag Seaport set a record by discharging <b>26,964 MT</b> of <b>Coking coal</b>  in <b>16 Hours</b> 
+                              at our Terminal
+  from Panamax Vessel <b>MV. Silver Navigator</b>. This is the highest discharge rate achieved at our
+  Terminal till date. The Cargo importers are <b>M/s Jayaswal</b>.
+                            </p>
+                            <h6 style="text-decoration:underline;font-weight:600;">Sunday, November 13, 2015</h6>
+                            <p>
+                              Vizag Seaport set a record by discharging <b>15,735 M</b>T of <b>Manganese ore</b> in <b>14 Hours</b> at our
+                              Terminal from Panamax Vessel <b>MV. Ocean master</b>. This is the highest discharge rate achieved at
+                              our Terminal till date. The Cargo importers are <b>M/s Oswal Smelters</b>.
+                            </p>
+                            <h6 style="text-decoration:underline;font-weight:600;">Monday, September 28, 2015</h6>
+                            <p>
+                              For the first time a Panamax Vessel <b>MV Navios Centaurus</b> berthed at EQ-8 of Vizag Seaport Private
+                              Limited with 14Mts draft. Subject vessel arrived with pet coke quantity about <b>74,110M</b>t on account
+                              of <b>M/s. ACC &amp; AMBUJA</b>.
+                            </p>
+                            <h6 style="text-decoration:underline;font-weight:600;">Tuesday, October 27, 2015</h6>
+                            <p>
+                              Vizag Seaport set a record by discharging <b>32,576 MT</b> of <b>Pet coke</b> in 
+                              <b>24 Consecutive Hours</b> at our
+Terminal from Panamax Vessel <b>MV. Eternity Island</b>. This is the highest discharge rate achieved at
+our Terminal During the month of October 15. The Cargo importers are <b>M/s Prism cements</b>.
+                            </p>
+                            <!-- <h6 style="text-decoration:underline;font-weight:600;"></h6>
+                            <p>
+                              
+                            </p>
+                            <h6 style="text-decoration:underline;font-weight:600;"></h6>
+                            <p>
+                              
+                            </p> -->
+                          </div>
+                          </div> 
+                          
+
                       </div>   
                     </div>
             </div>
-            <div class="row">
+            <div class="row ">
                     <div class="col-lg-12 col-md-12 col-sm-12 child padding-around" style="" >
                       <div class="row">
                         <div class="col-sm-1"></div>
@@ -96,7 +143,7 @@
                             
                     </div>
             </div>
-            <div class="row container">
+            <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 child padding-around " >
                         <div class="box-shadow-padding">
                           <h4 class="section-heading">Salient Features</h4>

@@ -9,191 +9,10 @@
     <link rel="stylesheet" href="bootstrap.min.css" >
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="btstyle.css">
+    <link rel="stylesheet" href="responsive_btstyle.css">
     <script src="https://use.fontawesome.com/5987b8c4e0.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
 </head>
-<style>
-::-webkit-scrollbar {
-  width: 15px;
-}
-::-webkit-scrollbar-track-piece{
-  background: #eaeaea;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #6c757d; 
-  border-radius: 7px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #343a40; 
-}
-#canvas {
-  position: relative;
-  bottom: -1;
-  left: 0;
-  max-block-size: 140px;
-  max-width: -webkit-fill-available;
-  /* z-index:-1; */
-}
-  html {
-  scroll-behavior: smooth;
-}
-iframe{width:100%}
-.nav-head{
-  /* border-top: 4px solid #ffcc00; */
-  background-color:white;
-}
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-.dropdown-menu 
-{
-  top:95%;
-}
-.foot{
-  /* height: 300px; */
-  position: relative;
-  background-color: #d8d7d3; 
-  background:linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,0.48)), url(video/95.jpg);
-  /* background-repeat: no-repeat; */
-  padding-top: 60px ;
-}
-.dropdown-item:hover {
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    background-color: #f1b114;
-}
-.make-bg{
-  z-index: -100;
-}
-.content {
-   
-    /* height: 500px; */
-    /* background-color: bisque; */
-    /* position: relative !important;
-    top: 450px; */
-    background-color:#ffffffe3;
-    /* left: 7%; */
-}
-.navbar{
-  border-top: 4px solid #f1b114;
-  padding-top:0;
-  padding-bottom: 0;
-  /* box-shadow: 2px 2px 3px 1px #ffcc00; */
-  background-color:#18387f!important;
-}
-.navbar-nav {
-  width: 100%;
-  justify-content: flex-end;
-}
-.navbar-light .navbar-nav .nav-link {
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-}
-.navbar-light .navbar-nav .active>.nav-link {
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-}
-.navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 255, 255);
-    background-color: #f1b114;
-}
-.navbar-light .navbar-nav .nav-link:focus {
-  color: rgb(255, 255, 255);
-    background-color: #f1b114;
-}
-.navbar-light .navbar-nav .show>.nav-link {
-  color: rgb(255, 255, 255);
-    background-color: #f1b114;
-}
-.video-bg
-{
-  position:sticky;
-  top:40px; 
-  width: 100%;
-}
-.imageicon {
-    -webkit-animation:spin 0.7s linear infinite;
-    -moz-animation:spin 0.7s linear infinite ;
-    animation:spin 0.7s linear infinite ;
-    /* -webkit-animation:spin 0.3s linear ;
-    -moz-animation:spin 0.3s linear ;
-    animation:spin 0.3s linear; */
-    /* animation-iteration-count:1.5; */
-
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-
-/* footer css */
-#footer h5{
-	padding-left: 10px;
-    border-left: 3px solid #f1b114;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color:#18387f;
-}
-#footer li a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-#footer ul.social li{
-	padding: 3px 0;
-}
-#footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
-}
-
-#footer ul.quick-links li a{
-  color:#343a40;
-  font-weight:600;
-}
-
-#footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
-
-@media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
-}
-</style>
 <script src="iframeResizer.min.js"></script>
 <body >
    <div class="nav-head" id="nav-head-up" >
@@ -209,25 +28,30 @@ iframe{width:100%}
       <img class="imageicon" style="" alt="" data-type="image" src="video/vspl_logo_wheel.png">
       <!-- <img class="imageicon" style="width:90px;" alt="" data-type="image" src="video/logo.jpg"> -->
       <img class="" style="width:82px;position: absolute; left:-2px;" alt="" data-type="image"  src="video/logo-border.png">
-      <img style=" width:330px; height:60px;padding-top:12px;" alt="" data-type="image" src="video/test.jpg">
+      <img id="vspl" style=" width:330px; height:60px;padding-top:12px;" alt="" data-type="image" src="video/test.jpg">
     </div>
+    
       <!-- Button trigger modal -->
 <span data-toggle="modal" data-target="#envm" style="cursor:pointer;">
-    <img src="video/env.png" alt="" style="position: absolute;right:20%;top: 2%;object-position: 50% 50%; width: 130px; height: 50px; object-fit: contain;">
+    <img id="envi-img" src="video/env.png" alt="" style="position: absolute;right:19%;top: 0%;object-position: 50% 50%; width: 150px; height: 70px; object-fit: contain;">
 </span>
   
   <!-- Modal for enivironmental management-->
   <div class="modal fade" id="envm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:unset !important;">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:90% !important;">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Environmental Management</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Environmental Monitoring</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body flex-center" style="flex-direction:column;">
             <img src="video/emr.png" class="img-fluid" alt="">
+            <p></p>
+            <img src="video/emr2.JPG" class="img-fluid" alt="">
+            <p></p>
+            <img src="video/emr3.JPG" class="img-fluid" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -235,8 +59,10 @@ iframe{width:100%}
       </div>
     </div>
   </div>
-      <img id="comp-j5dql230imgimage3"  style="position: absolute;right:10%;top: 3%;object-position: 50% 50%; width: 110px; height: 35px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_cc1de71462f1443fa83f8c875f82791e~mv2.png/v1/fill/w_139,h_45,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_cc1de71462f1443fa83f8c875f82791e~mv2.webp">
-      <a href="https://www.iso.org/home.html" target="_blank"><img id="comp-j5dofp1simgimage4" style="position: absolute;right:1%;top: 2%;object-position: 50% 50%; width: 110px; height:50px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_19ed69f1703f4ff58c22d88842514b05~mv2.png/v1/fill/w_151,h_69,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_19ed69f1703f4ff58c22d88842514b05~mv2.webp"></a> 
+    <!-- <a href="http://mail.vizagseaport.com" target="_blank"><img src="video/gmail_logo.png" style="position: absolute;right:10%;top: 2%;object-position: 50% 50%; width: 54px;  object-fit: cover;"></a> -->
+    <img id="comp-j5dql230imgimage3"  style="position: absolute;right:10%;top: 3%;object-position: 50% 50%; width: 110px; height: 35px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_cc1de71462f1443fa83f8c875f82791e~mv2.png/v1/fill/w_139,h_45,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_cc1de71462f1443fa83f8c875f82791e~mv2.webp">
+      
+    <a href="https://www.bsigroup.com/en-IN/ISO-9001-Quality-Management/" target="_blank"><img id="comp-j5dofp1simgimage4" style="position: absolute;right:1%;top: 2%;object-position: 50% 50%; width: 110px; height:50px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_19ed69f1703f4ff58c22d88842514b05~mv2.png/v1/fill/w_151,h_69,al_c,q_80,usm_0.66_1.00_0.01/57e2fb_19ed69f1703f4ff58c22d88842514b05~mv2.webp"></a> 
       
    </div>
     
@@ -284,15 +110,16 @@ iframe{width:100%}
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" onclick="viewSection('3','section-1')" id="navbarDropdown4" name="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Our Policy
+                              Corporate Governance
                             </a>
                             <div class="dropdown-menu animated  slideInUp" aria-labelledby="navbarDropdown" name="navbarDropdown4">
                               <a class="dropdown-item" href="#" onclick="viewSection('3','section-1')">CSR Policy</a>
                               <a class="dropdown-item" href="#" onclick="viewSection('3','section-2')">Remuneration Policy</a>
                               <a class="dropdown-item" href="#" onclick="viewSection('3','section-3')">Whistle Blower Policy</a>
+                              <a class="dropdown-item" href="#" onclick="viewSection('3','section-4')">Environmental Monitoring</a>
                             </div>
                           </li>
-                          <li class="nav-item dropdown">
+                          <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" onclick="viewSection('6','section-1')" id="navbarDropdown7" name="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Tenders
                             </a>
@@ -302,7 +129,7 @@ iframe{width:100%}
                               <a class=" dropdown-item" href="#" onclick="viewSection('6','section-3')">Civil Department</a>
                               <a class="  dropdown-item" href="#" onclick="viewSection('6','section-4')">Material Tendors</a>
                              </div>
-                           </li>
+                           </li> -->
                           <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" onclick="viewSection('4','section-1')" id="navbarDropdown5" name="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Careers
@@ -324,11 +151,27 @@ iframe{width:100%}
                                
                   </ul>
                 </div>
-              </nav>
+        </nav>
+        <!-- <div id="mySidenav" class="sidenav">
+            <a id="iso" href="https://www.bsigroup.com/en-IN/ISO-9001-Quality-Management/" target="_blank"><img id="comp-j5dofp1simgimage4" style="position: absolute;right:1%;top: 2%;object-position: 50% 50%; width: 110px; height:50px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_19ed69f1703f4ff58c22d88842514b05~mv2.png"></a>
+        
+        </div> -->
               <div class="video-bg make-bg" >
                 <video class="visible-desktop" id="hero-vid" poster="video/image.png" width="100%" autoplay="" loop="" muted="" >
                   <source type="video/mp4" src="video/vizag_seaport.mp4">
               </video>
+              </div>
+              <!-- <div class="social-icons">
+                 
+                      <div  style="display: inline-block">arrow</div>
+                  
+                <div style="display: inline-block">
+                  <div>fb</div>
+                  <div>mail</div>
+                </div>
+              </div> -->
+              <div class="up_arrow" id="up-arrow">
+                <a href="#nav-head-up" class="back-to-top nav-logo-hide" style="display: inline;cursor: pointer;"><i class="fa fa-chevron-up"></i></a>
               </div>
               <div class="content" >
                   <div id="demo">
@@ -342,8 +185,8 @@ iframe{width:100%}
           <li><a href="javascript:void();" onclick="viewSection('0','section-1')"><i class="fa fa-angle-double-right"></i>Company</a></li>
           <li><a href="javascript:void();" onclick="viewSection('1','section-1')"><i class="fa fa-angle-double-right"></i>Terminal Details</a></li>
           <li><a href="javascript:void();" onclick="viewSection('2','section-1')"><i class="fa fa-angle-double-right"></i>Berth Position</a></li>
-          <li><a href="javascript:void();" onclick="viewSection('3','section-1')"><i class="fa fa-angle-double-right"></i>Our Policy</a></li>
-          <li><a href="javascript:void();" onclick="viewSection('6','section-1')"><i class="fa fa-angle-double-right"></i>Tenders</a></li>
+          <li><a href="javascript:void();" onclick="viewSection('3','section-1')"><i class="fa fa-angle-double-right"></i>Corporate Governance</a></li>
+          <!-- <li><a href="javascript:void();" onclick="viewSection('6','section-1')"><i class="fa fa-angle-double-right"></i>Tenders</a></li> -->
           <li><a href="javascript:void();" onclick="viewSection('4','section-1')"><i class="fa fa-angle-double-right"></i>Careers</a></li>
           <li><a href="javascript:void();" onclick="viewSection('5','section-1')"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
         </ul>
@@ -372,7 +215,17 @@ iframe{width:100%}
                  
               </ul>
               <div class="list-inline-item"><a style="color: #4267b2" href="javascript:void();"><i class="fa fa-facebook-official fa-2x"></i></a></div>
-                    <div class="list-inline-item"><a style="color: #BD081C" href="http://mail.vizagseaport.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></div>
+              <div class="list-inline-item"><a style="color: #BD081C" href="http://mail.vizagseaport.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></div>
+              <div>
+                <div class="list-inline-item" style="margin-top:5%;">
+                  <a href="https://www.iso.org/home.html" target="_blank"><img  style="object-position: 50% 50%; width: 110px; height:50px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_19ed69f1703f4ff58c22d88842514b05~mv2.png"></a>
+                </div>
+                <div class="list-inline-item" style="margin-top:5%;">
+                  <img   style="object-position: 50% 50%; width: 110px; height: 35px; object-fit: cover;" alt="" data-type="image" src="https://static.wixstatic.com/media/57e2fb_cc1de71462f1443fa83f8c875f82791e~mv2.png">
+                </div>
+              </div>
+              
+              
           </div>
         </div>
         <div class="row text-center text-xs-center text-sm-left text-md-left" style="display:flex;align-items:flex-end;">
@@ -382,21 +235,6 @@ iframe{width:100%}
       </div>
       
     </div>
-    <div>
-      <!-- <p style="color:white; font-size:10px; text-align:center;">2019 © All Rights Reserved by VSPL</p> -->
-    </div>
-    <!-- <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-        
-      </div>
-      </hr>
-    </div>	 -->
-    <!-- <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil nisi, sint architecto provident praesentium persp</p>
-      </div>
-      </hr>
-  </div>	 -->
   </div>
     <canvas id="canvas">
       
