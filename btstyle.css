@@ -328,6 +328,7 @@ html {
   .social-icons:hover{
     right:0px;
   } */
+  
   @media (max-width:767px){
     #footer h5 {
       padding-left: 0;
