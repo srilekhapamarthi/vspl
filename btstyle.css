@@ -386,23 +386,23 @@ html {
 # Gallery Section
 --------------------------------------------------------------*/
 
-#gallery {
+.gallery-owl {
   padding: 60px;
   overflow: hidden;
 }
 
-#gallery .owl-nav,
-#gallery .owl-dots {
+.gallery-owl .owl-nav,
+.gallery-owl .owl-dots {
   margin-top: 25px;
   text-align: center;
 }
 
-#gallery .owl-item {
+.gallery-owl .owl-item {
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
 }
 
-#gallery .owl-dot {
+.gallery-owl .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -411,15 +411,15 @@ html {
   background-color: #ddd;
 }
 
-#gallery .owl-dot.active {
+.gallery-owl .owl-dot.active {
   background-color: #1c4fc3;
 }
 
-#gallery .gallery-carousel .owl-stage-outer {
+.gallery-owl .gallery-carousel .owl-stage-outer {
   overflow: visible;
 }
 
-#gallery .gallery-carousel .center {
+.gallery-owl .gallery-carousel .center {
   border: 6px solid #1c4fc3;
   margin: -10px;
   box-sizing: content-box;
