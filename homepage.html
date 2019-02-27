@@ -14,6 +14,13 @@
   .scroll-container{
     animation:hori-scroll 40s linear infinite;
   }
+  .scroll-container:hover 
+{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+     animation-play-state: paused;
+}
   @keyframes hori-scroll {
     100% { transform: translate(0,-85%);}
     0% { transform: translate(0,0);}
