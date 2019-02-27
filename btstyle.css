@@ -145,7 +145,7 @@ html {
   }
   #canvas {
     position: relative;
-    bottom: -1;
+    bottom: -10px;
     left: 0;
     max-block-size: 140px;
     max-width: -webkit-fill-available;
