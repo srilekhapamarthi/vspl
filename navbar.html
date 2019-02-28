@@ -5,7 +5,7 @@
     <link rel="icon" href="video/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Vizag Seaport Pvt. Ltd.</title>
     <link rel="stylesheet" href="bootstrap.min.css" >
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="btstyle.css">
@@ -250,7 +250,11 @@
 <script src="nav.js"></script>
 <script src="scroll.js"></script>
 <script>
-$( "[name='navbarDropdown1']").hover(
+
+$(document).ready(function() {
+    if( $(this).width() > 991 ) {
+      $( ".dropdown-menu" ).addClass("animated");
+      $( "[name='navbarDropdown1']").hover(
 function() { console.log("hovered");  $('#navbarDropdown1').dropdown('show'); },
 function() {console.log(" not hovered"); $('#navbarDropdown1').dropdown('hide'); }
 );
@@ -279,6 +283,51 @@ $( "[name='navbarDropdown7']").hover(
 function() { console.log("hovered");  $('#navbarDropdown7').dropdown('show'); },
 function() {console.log(" not hovered"); $('#navbarDropdown7').dropdown('hide'); }
 );
+    } else {
+      $( ".dropdown-menu" ).removeClass( "animated" );
+    }
+});
+
+$(window).resize(function() {
+    if( $(this).width() > 991 ) {
+      $( ".dropdown-menu" ).addClass("animated");
+      $( "[name='navbarDropdown1']").hover(
+function() { console.log("hovered");  $('#navbarDropdown1').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown1').dropdown('hide'); }
+);
+$( "[name='navbarDropdown2']").hover(
+function() { console.log("hovered");  $('#navbarDropdown2').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown2').dropdown('hide'); }
+);
+$( "[name='navbarDropdown3']").hover(
+function() { console.log("hovered");  $('#navbarDropdown3').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown3').dropdown('hide'); }
+);
+$( "[name='navbarDropdown4']").hover(
+function() { console.log("hovered");  $('#navbarDropdown4').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown4').dropdown('hide'); }
+);
+$( "[name='navbarDropdown5']").hover(
+function() { console.log("hovered");  $('#navbarDropdown5').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown5').dropdown('hide'); }
+);
+$( "[name='navbarDropdown6']").hover(
+function() { console.log("hovered");  $('#navbarDropdown6').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown6').dropdown('hide'); }
+);
+
+$( "[name='navbarDropdown7']").hover(
+function() { console.log("hovered");  $('#navbarDropdown7').dropdown('show'); },
+function() {console.log(" not hovered"); $('#navbarDropdown7').dropdown('hide'); }
+);
+    } else {
+      $( ".dropdown-menu" ).removeClass( "animated" );
+    }
+});
+
+
+
+
 </script>
 
 <script>
