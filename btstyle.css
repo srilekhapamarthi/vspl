@@ -69,9 +69,19 @@ html {
     font-size:2rem !important;
   }
 
-
+  @media only screen and (min-width: 501px) {
+    /* For Mobile: */
+    .lg-scrn
+    {
+      display:none !important;
+    }
+  }
   @media only screen and (max-width: 500px) {
     /* For Mobile: */
+    .smll-scrn
+    {
+      display:none !important;
+    }
     .side-nav{
       display: none !important;
     }
