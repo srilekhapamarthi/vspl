@@ -78,6 +78,10 @@ html {
   }
   @media only screen and (max-width: 500px) {
     /* For Mobile: */
+    #achnmile
+    {
+      text-align:center;
+    }
     .smll-scrn
     {
       display:none !important;
