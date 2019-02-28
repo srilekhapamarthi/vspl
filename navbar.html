@@ -285,6 +285,9 @@ function() {console.log(" not hovered"); $('#navbarDropdown7').dropdown('hide');
 );
     } else {
       $( ".dropdown-menu" ).removeClass( "animated" );
+      $(".dropdown-item").on('click',function(){
+   $('.collapse').collapse('hide');
+});
     }
 });
 
@@ -322,6 +325,9 @@ function() {console.log(" not hovered"); $('#navbarDropdown7').dropdown('hide');
 );
     } else {
       $( ".dropdown-menu" ).removeClass( "animated" );
+      $(".dropdown-item").on('click',function(){
+   $('.collapse').collapse('hide');
+});
     }
 });
 
