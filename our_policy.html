@@ -1,7 +1,94 @@
+<style>
+.modal-header-pop {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.modal-footer-pop{
+    border-top:0;
+    padding-top:0;
+}
+.modal-body-pop, .card-body-pop{
+    padding-bottom: 0;
+}
+.col-lg-3
+{
+  text-align:center;
+  
+  transition: transform .2s;
+}
+.col-lg-3:hover
+{
+    transform: scale(1.5);
+}
+
+
+* {
+        box-sizing: border-box;
+    }
+ .card{
+    max-width: 300px;
+    border-radius: 10%;
+    padding: 10px;
+    margin:10px;
+    box-shadow: 2px 2px 4px 1px #bdbdbd;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+ }
+ .card-img{
+    width: 100%;
+    opacity: 0.85;
+    border-radius: 40%;
+ }
+ .hori-img{
+   border-radius: 50%;
+ }
+ 
+ .cardscontain{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* height: 100%; */
+ }
+ .modal-content-shadow{
+    box-shadow: 2px 2px 20px 0px #1c2428;
+ }
+ .horicard{
+     flex-direction: row;
+     max-width: 500px;
+     border-radius: 30%;
+ }
+ #section-6 .card-title , .ctr
+ {
+   text-align:center;
+ }
+ .card-text
+ {
+  max-height: 72px;
+    overflow: hidden;
+ }
+ .block {
+  overflow: hidden;
+  width: 800px;
+  margin: 50px auto;
+  background: white;
+}
+.animation {
+  width: auto;
+  font-size: 0px;
+}
+.animation div {
+  display: inline-block;
+  width: auto;
+  float: none;
+  padding: 0 10px;
+}
+</style>
 
     <div class="main-content">
             <div class="side-nav">
                     <ul>
+                        <li><a href="#section-6">Committee Members</a></li>
+                        <li><a href="#section-7">Directors Report</a></li>
                       <li><a href="#section-1">CSR Policy</a></li>
                       <li><a href="#section-2">Remuneration Policy</a></li>
                       <li><a href="#section-3">Whistle Blower Policy</a></li>
@@ -11,6 +98,72 @@
                 </div>
                   
                   <main>
+                      <section id="section-6"><p></p>
+                        <h2 class="section-heading">Committee Members</h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card animated zoomIn mx-auto">
+                                      <div class="image mx-auto">
+                                      
+                                            <img id="comp-j65zepc6imgimage" alt="" data-type="image" src="video/KB PIC.jpg" style="width: 167px; height: 167px; object-fit: cover;">
+                                       </div>
+                                      <div class="card-body">
+                                              <h5 class="card-title">Mr.Kishalay Bandopadhyay</h5>
+                                                  <p style="text-align: center;"><b>Non-Executive Director</b></p>
+                                              <p class="card-text" style="text-align:left;">Audit, nomination, Remuneration and Corporate Social Responsibility committee member</p>
+                      
+                                     
+                                       </div>
+                              </div>
+                             
+                     
+                            </div>
+                             
+                            <div class="col-lg-4">
+                                <div class="card animated zoomIn mx-auto">
+                                      <div class="image mx-auto">
+                                        
+                                            <img id="comp-j65zepc6imgimage" alt="" data-type="image" src="video/SP.1.png" style="width: 167px; height: 167px; object-fit: contain;">
+                                        </div>
+                                      <div class="card-body">
+                                              <h5 class="card-title">Mr.Shiraz E Poonevala</h5>
+                                                  <p style="text-align: center;"><b>Independent Director</b></p>
+                                                  <p class="card-text" style="text-align:left;">Audit, nomination, Remuneration and Corporate Social Responsibility committee member</p>
+                      
+                                                  
+                                       </div>
+                              </div>
+                             
+                     
+                             </div>
+    
+                            <div class="col-lg-4">
+                                <div class="card animated zoomIn mx-auto">
+                                      <div class="image mx-auto">
+                                         
+                                            <img id="comp-j663wksmimgimage" alt="" data-type="image" src="video/homai.webp" style="width: 157px; height: 172px; object-fit: contain;">
+                                        
+                                      </div>
+                                      <div class="card-body">
+                                            <h5 class="card-title">Ms.Homai Daruwalla<br/></h5>
+                                                <p style="text-align:center;"><b>Independent Director</b></p>
+                                                <p class="card-text" style="text-align:left;">Audit, nomination, Remuneration and Corporate Social Responsibility committee member</p>
+                      
+                                            </div>
+                              </div>
+                             
+                      </div>    
+                        </div>
+                        
+                      </section>
+
+                      <section id="section-7" >
+                          <p></p>
+                          
+                          <h2 class="section-heading">Directors Report</h2>
+                          <iframe src="docs\directors_report.pdf" width='100%' height='600px' frameborder="0"  allowfullscreen style="margin-left:4%;"></iframe>
+                      </section>
+
                     <section id="section-1">
                             <p></p>
                         <h2 class="section-heading">CSR Policy</h2>
@@ -578,7 +731,7 @@ All Protected Disclosures in writing or documented along with the results of inv
                     <p></p>
                     <p></p>
                     <h2 class="section-heading">Annual Report</h2>
-                    <iframe src="docs\annual_report.pdf" width='100%' height='600px' frameborder="0"  allowfullscreen></iframe>
+                    <iframe src="docs\annual_report.pdf" width='100%' height='600px' frameborder="0"  allowfullscreen style="margin-left:4%;"></iframe>
                     <!-- <a href="docs\annual_report.pdf" target="_blank"><img src="video\pdf-img.png" style="width:100px; margin-top: 2%;margin-left:15%;"></a> -->
                  </section>
 
